@@ -1,6 +1,6 @@
 # Release Notes for Digital Products
 
-## Unreleased
+## 4.0.1 - 2024-09-11
 
 - Fixed a bug where product fields content was not prepared for Craft 5.
 
