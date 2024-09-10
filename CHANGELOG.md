@@ -1,5 +1,9 @@
 # Release Notes for Digital Products
 
+## 4.0.1 - 2024-09-11
+
+- Fixed a bug where product fields content was not prepared for Craft 5.
+
 ## 4.0.0 - 2024-03-20
 
 - Digital Products now requires Craft Commerce 5.0.0-beta.1 or later.

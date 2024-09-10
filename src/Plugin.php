@@ -56,7 +56,8 @@ use yii\base\Event;
  * @property-read array $cpNavItem
  * @property-read mixed $settingsResponse
  */
-class Plugin extends BasePlugin
+class
+Plugin extends BasePlugin
 {
     /**
      * @inheritDoc
@@ -71,7 +72,7 @@ class Plugin extends BasePlugin
     /**
      * @inheritDoc
      */
-    public string $schemaVersion = '3.0.3';
+    public string $schemaVersion = '4.0.0.2';
 
     /**
      * @inheritDoc
