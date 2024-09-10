@@ -27,8 +27,8 @@ use craft\events\DefineConsoleActionsEvent;
 use craft\events\DefineFieldLayoutFieldsEvent;
 use craft\events\RebuildConfigEvent;
 use craft\events\RegisterComponentTypesEvent;
-use craft\events\RegisterGqlSchemaComponentsEvent;
 use craft\events\RegisterGqlQueriesEvent;
+use craft\events\RegisterGqlSchemaComponentsEvent;
 use craft\events\RegisterGqlTypesEvent;
 use craft\events\RegisterUserPermissionsEvent;
 use craft\helpers\UrlHelper;
@@ -56,8 +56,7 @@ use yii\base\Event;
  * @property-read array $cpNavItem
  * @property-read mixed $settingsResponse
  */
-class
-Plugin extends BasePlugin
+class Plugin extends BasePlugin
 {
     /**
      * @inheritDoc
