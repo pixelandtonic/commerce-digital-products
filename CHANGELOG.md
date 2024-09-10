@@ -1,5 +1,9 @@
 # Release Notes for Digital Products
 
+## 4.0.2 - 2024-09-11
+
+- Fixed a bug where GraphQL queries for digital products would fail.
+
 ## 4.0.1 - 2024-09-11
 
 - Fixed a bug where product fields content was not prepared for Craft 5.
