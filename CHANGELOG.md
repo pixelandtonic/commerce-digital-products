@@ -1,5 +1,10 @@
 # Release Notes for Digital Products
 
+## Unreleased
+
+- Fixed a bug where users with “Manage licenses” permission weren’t allowed to edit licenses. ([#105](https://github.com/craftcms/digital-products/issues/105))
+- Fixed a PHP error that could occur when eager loading orders on a license query. ([#100](https://github.com/craftcms/digital-products/issues/100))
+
 ## 4.0.2 - 2024-09-11
 
 - Fixed a bug where GraphQL queries for digital products would fail.
@@ -11,6 +16,11 @@
 ## 4.0.0 - 2024-03-20
 
 - Digital Products now requires Craft Commerce 5.0.0-beta.1 or later.
+
+## 3.2.4 - 2025-02-03
+
+- Fixed a bug where users with “Manage licenses” permission weren’t allowed to edit licenses. ([#105](https://github.com/craftcms/digital-products/issues/105))
+- Fixed a PHP error that could occur when eager loading orders on a license query. ([#100](https://github.com/craftcms/digital-products/issues/100))
 
 ## 3.2.3 - 2023-09-11
 
