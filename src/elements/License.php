@@ -569,6 +569,6 @@ class License extends Element
             return false;
         }
 
-        return $user->can('digitalProducts-manageLicenses:' . $productType->uid);
+        return $user->can('digitalProducts-manageLicenses');
     }
 }

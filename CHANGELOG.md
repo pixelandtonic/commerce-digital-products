@@ -1,5 +1,9 @@
 # Release Notes for Digital Products
 
+## Unreleased
+
+- Fixed a bug where users with “Manage licenses” permission weren’t allowed to edit licenses. ([#105](https://github.com/craftcms/digital-products/issues/105))
+
 ## 3.2.3 - 2023-09-11
 
 - Fixed an XSS vulnerability.
