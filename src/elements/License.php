@@ -276,6 +276,7 @@ class License extends Element
                 ->select('id as source, orderId as target')
                 ->from('{{%digitalproducts_licenses}}')
                 ->where(['in', 'id', $sourceElementIds])
+                ->andWhere(['not', ['orderId' => null]])
                 ->all();
 
             return [
