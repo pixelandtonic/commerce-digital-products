@@ -46,14 +46,17 @@ class Licenses extends Component
         $lineItems = $order->getLineItems();
 
         foreach ($lineItems as $lineItem) {
-            $itemId = $lineItem->purchasableId;
-            $element = Craft::$app->getElements()->getElementById($itemId);
-            $quantity = $lineItem->qty;
+            // Could be deleted line item
+            if($itemId = $lineItem->purchasableId) {
 
-            if ($element instanceof Product) {
-                /** @var Product $element */
-                for ($i = 0; $i < $quantity; $i++) {
-                    DigitalProducts::getInstance()->getLicenses()->licenseProductByOrder($element, $order);
+                $element = Craft::$app->getElements()->getElementById($itemId);
+                $quantity = $lineItem->qty;
+
+                if ($element instanceof Product) {
+                    /** @var Product $element */
+                    for ($i = 0; $i < $quantity; $i++) {
+                        DigitalProducts::getInstance()->getLicenses()->licenseProductByOrder($element, $order);
+                    }
                 }
             }
         }

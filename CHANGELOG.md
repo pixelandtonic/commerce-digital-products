@@ -1,5 +1,9 @@
 # Release Notes for Digital Products
 
+## Unreleased
+
+- Fixed a PHP error that could occur when paying for a completed order that contains deleted digital products.
+
 ## 4.0.3 - 2025-02-03
 
 - Fixed a bug where users with “Manage licenses” permission weren’t allowed to edit licenses. ([#105](https://github.com/craftcms/digital-products/issues/105))
